@@ -24,6 +24,7 @@
         :hilt="item.hilt"
         :hue="item.hue"
         :lightness="item.lightness"
+        :translateY="item.translateY"
       />
     </Slide>
 
@@ -41,10 +42,11 @@ import { Carousel, Slide, Navigation } from "vue3-carousel";
 import { reactive } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
 
+const hiltPath = "/hilts";
 const sabers1 = [
   {
-    name: "Luke Skywalker",
-    hilt: "/src/assets/hilt1.png",
+    name: "Green lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 120,
     lightness: "50%",
   },
@@ -53,45 +55,46 @@ const sabers1 = [
 const sabers = [
   //Green
   {
-    name: "Luke Skywalker",
-    hilt: "/src/assets/hilt1.png",
+    name: "Green lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 120,
     lightness: "50%",
   },
   //Blue
   {
-    name: "Obi-Wan Kenobi",
-    hilt: "/src/assets/hilt1.png",
+    name: "Blue lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 195,
     lightness: "50%",
   },
   //Yellow
   {
-    name: "Luke Skywalker",
-    hilt: "/src/assets/hilt1.png",
+    name: "Yellow lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 60,
     lightness: "50%",
   },
   //Red
   {
-    name: "Obi-Wan Kenobi",
-    hilt: "/src/assets/hilt1.png",
+    name: "Red lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 360,
     lightness: "50%",
   },
   //Purple
   {
-    name: "Obi-Wan Kenobi",
-    hilt: "/src/assets/hilt1.png",
+    name: "Purple lightsaber",
+    hilt: `${hiltPath}/hilt1.png`,
     hue: 290,
     lightness: "50%",
   },
   //Darksaber
   {
-    name: "Obi-Wan Kenobi",
-    hilt: "/src/assets/hilt1.png",
+    name: "Darksaber",
+    hilt: `${hiltPath}/dark-hilt.png`,
     hue: 120,
     lightness: "100%",
+    translateY: "-12px",
   },
 ];
 

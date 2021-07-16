@@ -7,6 +7,7 @@ import SabersList from "./components/SabersList.vue";
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ import SabersList from "./components/SabersList.vue";
 }
 body {
   /* background-color: #01011a; */
+  font-family: "Saira", sans-serif;
   background-color: #130f40;
   background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
   background-size: cover;
@@ -21,6 +23,7 @@ body {
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Saira", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
